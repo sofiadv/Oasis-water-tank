@@ -17,11 +17,11 @@ header {
     height: auto; 
 }
 
-/* Estilos del menú hamburguesa */
+/* Estilos del menú hamburguesa para dispositivos móviles (predeterminado) */
 .menu-toggle {
-    font-size: 30px; 
-    color: black; 
-    cursor: pointer; 
+    font-size: 35px; /* Tamaño predeterminado para dispositivos móviles */
+    color: black; /* Color del icono en negro */
+    cursor: pointer; /* Cambia el cursor al estilo de un puntero al pasar sobre el icono */
 }
 
 /* Estilos para el menú desplegable */
