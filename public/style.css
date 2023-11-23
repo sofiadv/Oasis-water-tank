@@ -1,3 +1,9 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 /* Estilos del header */
 header {
     display: flex;
@@ -5,6 +11,7 @@ header {
     align-items: center;
     padding: 10px;
     background: transparent; 
+    color: white; /* Color del texto en el encabezado */
 }
 /* Estilos del logo */
 .logo {
@@ -64,8 +71,90 @@ header {
     border: none; 
     outline: none; 
 }
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0; /* Espaciado del 2% arriba y abajo */
+    position: relative; /* Añade posición relativa para controlar capas */
+    z-index: 1; /* Asegura que las imágenes estén sobre el video */
+}
 
+.img-mosaico {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd; /* Añade un borde para separar las imágenes */
+    border-radius: 5px; /* Agrega bordes redondeados */
+}
 
+.video-container {
+    position: relative;
+}
+
+#video-background {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hover-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hover-button:hover {
+    background-color: white;
+    color: black; /* Cambia el color del texto al hacer hover */
+}
+/* ---------------- FOOTER ---------------- */
+footer img{
+    width: 40%;
+    margin-left: 30%;
+}
+
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+.footer-redes-sociales{
+    display: flex;
+    gap: 40%;
+}
+.footer-redes-sociales-logos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    height: 10vh;
+}
+.footer-redes-sociales img{
+    width: 80%;
+    margin-left: 10%;
+}
+.footer-redes-sociales a{
+    width: 80%;
+    margin: auto;
+}
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
