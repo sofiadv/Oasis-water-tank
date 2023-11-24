@@ -71,39 +71,36 @@ header {
     border: none; 
     outline: none; 
 }
-.image-grid {
-    display: flex;
-    justify-content: space-between;
-    margin: 2% 0; /* Espaciado del 2% arriba y abajo */
-    position: relative; /* Añade posición relativa para controlar capas */
-    z-index: 1; /* Asegura que las imágenes estén sobre el video */
+
+main {
+    position: relative;
 }
 
-.img-mosaico {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #ddd; /* Añade un borde para separar las imágenes */
-    border-radius: 5px; /* Agrega bordes redondeados */
-}
-
+/* Estilos para el video de fondo y el botón */
 .video-container {
     position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }
 
 #video-background {
     width: 100%;
     height: auto;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.overlay-content {
     text-align: center;
 }
 
@@ -115,12 +112,31 @@ header {
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 25%;
 }
 
 .hover-button:hover {
     background-color: white;
     color: black; /* Cambia el color del texto al hacer hover */
 }
+
+.divider {
+    height: 10px;
+    background-color: #ccc; /* Gris claro, ajusta el color según tus preferencias */
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2% 0; /* Espaciado del 2% arriba y abajo */
+}
+
+.img-mosaico {
+    width: 48%; /* Ajusta el ancho según tus necesidades */
+    margin-bottom: 2%; /* Espaciado entre las imágenes */
+}
+
 /* ---------------- FOOTER ---------------- */
 footer img{
     width: 40%;
