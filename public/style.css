@@ -129,12 +129,10 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 2% 0; /* Espaciado del 2% arriba y abajo */
 }
 
 .img-mosaico {
-    width: 48%; /* Ajusta el ancho según tus necesidades */
-    margin-bottom: 2%; /* Espaciado entre las imágenes */
+    width: 50%; /* Ajusta el ancho según tus necesidades */
 }
 
 /* ---------------- FOOTER ---------------- */

@@ -26,4 +26,28 @@ document.addEventListener("DOMContentLoaded", function () {
         logo.style.display = "block";
         menuIcon.style.display = "block";
     });
+
+    // Script para cambiar videos
+    const videoElement = document.getElementById("video-background");
+    const videoSources = [
+        "./img/camioneta3.mp4",
+        "./img/camioneta2.mp4",
+        "./img/camioneta3.mp4"
+        // Agrega más rutas de video según sea necesario
+    ];
+
+    let currentVideoIndex = 0;
+
+    function playNextVideo() {
+        currentVideoIndex = (currentVideoIndex + 1) % videoSources.length;
+        const nextVideoSource = videoSources[currentVideoIndex];
+        videoElement.src = nextVideoSource;
+        videoElement.load();
+        videoElement.play();
+    }
+
+    videoElement.addEventListener("ended", playNextVideo);
+
+    // Inicia la reproducción con el primer video
+    playNextVideo();
 });
