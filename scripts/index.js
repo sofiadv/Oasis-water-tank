@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Script para cambiar videos
     const videoElement = document.getElementById("video-background");
     const videoSources = [
-        "./img/camioneta1.mp4",
-        "./img/camioneta2.mp4",
-        "./img/camioneta3.mp4"
+        "../img/camioneta1.mp4",
+        "../img/camioneta2.mp4",
+        "../img/camioneta3.mp4"
         // Agrega más rutas de video según sea necesario
     ];
 
