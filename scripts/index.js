@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Script para cambiar videos
     const videoElement = document.getElementById("video-background");
     const videoSources = [
-        "./img/camioneta3.mp4",
+        "./img/camioneta1.mp4",
         "./img/camioneta2.mp4",
         "./img/camioneta3.mp4"
         // Agrega más rutas de video según sea necesario
@@ -41,9 +41,16 @@ document.addEventListener("DOMContentLoaded", function () {
     function playNextVideo() {
         currentVideoIndex = (currentVideoIndex + 1) % videoSources.length;
         const nextVideoSource = videoSources[currentVideoIndex];
+    
+        // Show loading animation.
         videoElement.src = nextVideoSource;
         videoElement.load();
-        videoElement.play();
+    
+        videoElement.addEventListener('canplay', function() {
+            videoElement.play().catch(error => {
+                console.error("Error playing video:", error);
+            });
+        }, { once: true });
     }
 
     videoElement.addEventListener("ended", playNextVideo);
