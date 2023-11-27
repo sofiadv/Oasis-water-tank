@@ -6,11 +6,11 @@ footer img{
 
 footer{
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row-reverse;
     align-items: center;
     gap: 2vh;
+    justify-content: center;
+    text-align: center;
 }
 
 footer a{
@@ -18,8 +18,12 @@ footer a{
 }
 .footer-redes-sociales{
     display: flex;
-    gap: 40%;
 }
+
+.div-flecha-arriba{
+    display: none;
+}
+
 .footer-redes-sociales-logos{
     display: flex;
     justify-content: center;
@@ -39,4 +43,53 @@ footer a{
 
 .footer-volver{
     opacity: 60%;
+}
+
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    
+    footer img{
+        width: 40%;
+        margin-left: 0;
+    }
+    
+    footer{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2vh;
+        text-align: center;
+    }
+    
+    footer a{
+        text-decoration: none;
+    }
+    .footer-redes-sociales{
+        display: flex;
+        gap: 40%;
+    }
+    .div-flecha-arriba{
+        display: block;
+    }
+    .footer-redes-sociales-logos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        height: 10vh;
+    }
+    .footer-redes-sociales img{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .footer-redes-sociales a{
+        width: 80%;
+        margin: auto;
+    }
+    
+   
 }

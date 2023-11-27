@@ -140,6 +140,10 @@ main {
     margin-bottom: 5%;
 }
 
+#presentación-producto img{
+    width: 100%;
+}
+
 .presentation-button{
     background-color: transparent;
     color: gray;
@@ -156,40 +160,7 @@ main {
     color: white; /* Cambia el color del texto al hacer hover */
 }
 
-/* ---------------- FOOTER ---------------- */
-footer img{
-    width: 40%;
-    margin-left: 30%;
-}
 
-footer{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1vh;
-}
-.footer-redes-sociales{
-    display: flex;
-    gap: 40%;
-}
-.footer-redes-sociales-logos{
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-    height: 10vh;
-}
-.footer-redes-sociales img{
-    width: 80%;
-    margin-left: 10%;
-}
-.footer-redes-sociales a{
-    width: 80%;
-    margin: auto;
-}
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
