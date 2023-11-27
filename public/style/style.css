@@ -160,6 +160,10 @@ main {
     color: white; /* Cambia el color del texto al hacer hover */
 }
 
+.productos img{
+    width: 100%;
+}
+
 
 
 /* Media query para dispositivos móviles */
