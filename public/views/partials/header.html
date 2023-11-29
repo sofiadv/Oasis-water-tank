@@ -1,13 +1,25 @@
-        <header>
-            <div class="logo">
-                <a href="./index.html"><img src="../img/oasis-logo-nuevo.png" alt="Oasis Water Tank"></a> <!-- La ruta de la imagen es relativa a la ubicación del HTML -->
-            </div>
-            <div class="menu-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="https://kit.fontawesome.com/55711116cb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;500&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="/img/oasis-logo-nuevo.png" alt="Oasis Water Tank"></a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    
         <!-- Menú desplegable -->
-        <div id="mobile-menu" class="hidden">
+        <nav id="mobile-menu" class="hidden">
             <div class="menu-header">
                 <button id="close-menu">X</button>
             </div>
@@ -17,7 +29,6 @@
                 <a href="./productos.html" title="Explora nuestra tienda"><li>PRODUCTOS</li></a>
                 <a href="./mayoristas.html" title="Contáctanos"><li>MAYORISTAS</li></a>
             </ul>
-        </div>
+        </nav>
     </header>
-</body>
-</html>
+    <script src="/scripts/header.js"></script>

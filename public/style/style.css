@@ -14,6 +14,7 @@ header {
     padding: 10px;
     background: transparent; 
     color: white; /* Color del texto en el encabezado */
+    transition: background 0.3s;
 }
 /* Estilos del logo */
 .logo {
@@ -81,6 +82,14 @@ a{
     color: gray;
 }
 
+.menu-opened {
+    background: rgba(0, 0, 0, 0);
+}
+
+.hidden {
+    display: none;
+}
+
 main {
     position: relative;
 }
@@ -143,6 +152,7 @@ main {
 .img-mosaico {
     width: 50%; /* Ajusta el ancho según tus necesidades */
 }
+
 
 #presentación-producto{
     text-align: center;
