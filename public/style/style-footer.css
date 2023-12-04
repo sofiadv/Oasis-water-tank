@@ -19,6 +19,12 @@ footer a{
     width: 20%;
     color: white;
 }
+
+.img-footer{
+    width: 40%;
+    margin: 10px;
+}
+
 .footer-redes-sociales{
     display: flex;
     width: 20%;

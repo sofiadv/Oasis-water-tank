@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
     // Menú Móvil
     const menuToggle = document.querySelector(".menu-toggle");
     const mobileMenu = document.getElementById("mobile-menu");
@@ -66,4 +66,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Inicia la reproducción con el primer video
     playNextVideo();
-});
+}); */
+
+
+
+const videos = [
+    "../img/camioneta1.mp4",
+    "../img/camioneta2.mp4",
+    "../img/camioneta3.mp4"
+];
+
+const videoPlayer = document.getElementById('video-background');
+let currentVideoIndex = 0;
+
+function changeVideo() {
+    currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+    videoPlayer.src = videos[currentVideoIndex];
+    videoPlayer.load();
+    videoPlayer.play();
+}
+
+videoPlayer.onended = function() {
+    changeVideo();
+};
+
+videoPlayer.play();
