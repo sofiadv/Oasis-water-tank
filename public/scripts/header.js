@@ -7,7 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.querySelector(".menu-toggle");
 
     menuToggle.addEventListener("click", function () {
-        showMobileMenu();
+        if (mobileMenu.classList.contains('menu-opened')) {
+            hideMobileMenu();
+        } else {
+            showMobileMenu();
+        }
     });
 
     closeMenuButton.addEventListener("click", function () {
@@ -16,15 +20,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function showMobileMenu() {
         mobileMenu.style.display = "block";
-        header.classList.add("menu-opened");
-        logo.classList.add("hidden");
-        menuIcon.classList.add("hidden");
+        mobileMenu.classList.add('menu-opened');
+        header.classList.add('menu-opened');
+        logo.classList.add('hidden');
+        menuIcon.classList.add('hidden');
     }
 
     function hideMobileMenu() {
         mobileMenu.style.display = "none";
-        header.classList.remove("menu-opened");
-        logo.classList.remove("hidden");
-        menuIcon.classList.remove("hidden");
+        mobileMenu.classList.remove('menu-opened');
+        header.classList.remove('menu-opened');
+        logo.classList.remove('hidden');
+        menuIcon.classList.remove('hidden');
     }
 });

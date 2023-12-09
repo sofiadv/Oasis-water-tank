@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oasis® Water Tanks</title>
-    <link rel="stylesheet" href="../style/style.css"> <!-- La ruta del archivo CSS es relativa a la ubicación del HTML -->
+    <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/style-footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;500&family=Montserrat:wght@300;700&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;500&family=Montserrat:wght@300;700&display=swap">
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <a href="./index.html"><img src="../img/oasis-logo-nuevo.png" alt="Oasis Water Tank"></a>
-            <!-- La ruta de la imagen es relativa a la ubicación del HTML -->
+            <a href="./index.html"><img src="../img/oasis-logo-nuevo.png" alt="Oasis Water Tank Logo"></a>
         </div>
         <div class="menu-toggle">
             <i class="fa-solid fa-bars"></i>
         </div>
-    
-    <!-- Menú desplegable -->
-    <div id="mobile-menu" class="hidden">
-        <div class="menu-header">
-            <button id="close-menu">X</button>
+
+        <!-- Menú desplegable -->
+        <div id="mobile-menu" class="hidden">
+            <div class="menu-header">
+                <button id="close-menu">X</button>
+            </div>
+            <nav>
+                <ul>
+                    <a href="./index.html" title="Ir a la página de inicio">
+                        <li>INICIO</li>
+                    </a>
+                    <a href="./mision-vision.html" title="Conoce nuestra misión y visión">
+                        <li>MISIÓN Y VISIÓN</li>
+                    </a>
+                    <a href="./productos.html" title="Explora nuestra tienda">
+                        <li>PRODUCTOS</li>
+                    </a>
+                    <a href="./mayoristas.html" title="Contáctanos">
+                        <li>MAYORISTAS</li>
+                    </a>
+                </ul>
+            </nav>
         </div>
-        <ul>
-            <a href="./index.html" title="Ir a la página de inicio"><li>INICIO</li></a>
-            <a href="./mision-vision.html" title="Conoce nuestra misión y visión"><li>MISIÓN Y VISIÓN</li></a>
-            <a href="./productos.html" title="Explora nuestra tienda"><li>PRODUCTOS</li></a>
-            <a href="./mayoristas.html" title="Contáctanos"><li>MAYORISTAS</li></a>
-        </ul>
-    </div>
-</header>
+    </header>
     <main>
         <section class="video-container" id="video-container">
-            <video autoplay muted id="video-background">
+            <video autoplay muted id="video-background" preload="auto">
                 <source src="../img/camioneta1.mp4" type="video/mp4">
                 Tu navegador no soporta el tag de video.
             </video>
@@ -43,58 +54,39 @@
                 <button class="hover-button">VER PRODUCTOS</button>
             </div>
         </section>
-               
-        
+
         <div class="divider"></div>
         <section class="image-grid">
-                    <img src="../img/camioneta-rio.jpg" alt="Imagen 1" class="img-mosaico">
-                    <img src="../img/boogyAmarillo.jpg" alt="Imagen 2" class="img-mosaico">
-                    <img src="../img/camionetaNegra.jpg" alt="Imagen 3" class="img-mosaico">
-                    <img src="../img/camioneta-blanca y negra.jpg" alt="Imagen 4" class="img-mosaico">
+            <img src="../img/camioneta-rio.jpg" alt="Camioneta en el río" class="img-mosaico">
+            <img src="../img/boogyAmarillo.jpg" alt="Imagen 2" class="img-mosaico">
+            <img src="../img/camionetaNegra.jpg" alt="Imagen 3" class="img-mosaico">
+            <img src="../img/camioneta-blanca y negra.jpg" alt="Imagen 4" class="img-mosaico">
         </section>
-        <div id="presentación-producto">
-            <img src="../img/tanque-primer-plano.jpg" alt="">
+        <section id="presentación-producto">
+            <img src="../img/tanque-primer-plano.jpg" alt="Tanque en primer plano">
             <h2>Duradero y versátil</h2>
-            <p>Los tanques de agua Oasis Tank®️ vienen con una serie de piezas especialmente diseñadas para permitirle al producto adaptarse a cualquier vehículo que tenga un sistema de racks de techo. Los tanques están diseñado para soportar las más exigentes condiciones.</p>
+            <p>Los tanques de agua Oasis Tank®️ vienen con una serie de piezas especialmente diseñadas para permitirle al producto adaptarse a cualquier vehículo que tenga un sistema de racks de techo. Los tanques están diseñados para soportar las más exigentes condiciones.</p>
             <button class="presentation-button">VER PRODUCTOS</button>
-        </div>
+        </section>
         <div class="productos">
             <div class="detalle-tanque">
-                <img src="../img/2-Tanque-Oasis-1080-3610.jpg" alt="">
+                <img src="../img/2-Tanque-Oasis-1080-3610.jpg" alt="Tanque 1">
                 <h2>Nombre Producto</h2>
                 <p>Longitud: 1 mt</p>
                 <p>Capacidad: 10 lts</p>
                 <h3>$ 190.000</h3>
-            </div> 
-            <div class="detalle-tanque">
-                <img src="../img/2-Tanque-Oasis-1080-3610.jpg" alt="">
-                <h2>Nombre Producto</h2>
-                <p>Longitud: 1,5 mt</p>
-                <p>Capacidad: 15 lts</p>
-                <h3>$ 225.000</h3>
             </div>
-            <div class="detalle-tanque">
-                <img src="../img/2-Tanque-Oasis-1080-3610.jpg" alt="">
-                <h2>Nombre Producto</h2>
-                <p>Longitud: 2 mt</p>
-                <p>Capacidad: 20 lts</p>
-                <h3>$ 240.000</h3>
-            </div>
-            <div class="detalle-tanque">
-                <img src="../img/2-Tanque-Oasis-1080-3610.jpg" alt="">
-                <h2>Nombre Producto</h2>
-                <p>Longitud: 2,5 mt</p>
-                <p>Capacidad: 25 lts</p>
-                <h3>$ 260.000</h3>
-            </div>
+            <!-- Repite la estructura para otros productos -->
         </div>
     </main>
     <footer>
-        <a href="./index.html" class="img-footer"><img src="../img/oasis-logo-nuevo.png" alt="Oasis Water Tank"></a><!-- La ruta de la imagen es relativa a la ubicación del HTML -->
-        <a href="">INICIO</a>
-        <a href="">MISIÓN Y VISIÓN</a>
-        <a href="">TIENDA</a>
-        <a href="">CONTACTO</a>
+        <a href="./index.html" class="img-footer"><img src="../img/oasis-logo-nuevo.png" alt="Oasis Water Tank"></a>
+        <nav>
+            <a href="">INICIO</a>
+            <a href="">MISIÓN Y VISIÓN</a>
+            <a href="">TIENDA</a>
+            <a href="">CONTACTO</a>
+        </nav>
         <div class="footer-redes-sociales">
             <div class="footer-redes-sociales-logos">
                 <a href="#"><img src="../img/logo-facebook.png" alt="Facebook" class="footer-facebook"></a>
@@ -107,7 +99,8 @@
     </footer>
     <script src="https://kit.fontawesome.com/55711116cb.js" crossorigin="anonymous"></script>
     <!-- Iconos: https://www.flaticon.es/ -->
-    <script src="../scripts/index.js"></script>
-    <script src="../scripts/header.js"></script>
+    <script src="../scripts/index.js" defer></script>
+    <script src="../scripts/header.js" defer></script>
 </body>
+
 </html>
