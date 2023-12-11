@@ -1,0 +1,143 @@
+/* Estilos del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: white; 
+    transition: background 0.3s;
+    box-shadow: rgba(0,0,0,.25) 0 3px 11px 0;
+    position: fixed;
+    z-index: 10;
+    margin-top: -120px;
+}
+/* Estilos del logo */
+.logo {
+    text-align: center;
+    flex: 1; 
+    width: 30%;
+}
+
+.logo img {
+    max-width: 60%; 
+    height: auto; 
+}
+
+.menu-toggle, #mobile-menu{
+    display: none;
+}
+
+.menu-desktop{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-desktop a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-desktop li{
+    list-style: none;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 500px) {
+    header{
+        margin-top: 0;
+    }
+    main{
+        margin-top: 20px;
+    }
+    .menu-desktop{
+        display: none;
+    }
+    .menu-toggle {
+        display: block; /* Mostrar el icono del menú hamburguesa en pantallas pequeñas */
+    }
+
+    /* Estilos del menú hamburguesa para dispositivos móviles (predeterminado) */
+.menu-toggle {
+    font-size: 25px; /* Tamaño predeterminado para dispositivos móviles */
+    color: gray; /* Color del icono en negro */
+    cursor: pointer; /* Cambia el cursor al estilo de un puntero al pasar sobre el icono */
+}
+
+.logo img {
+    max-width: 40%; 
+    height: auto;
+    margin: auto;
+    margin-left: 25px; 
+}
+
+header{
+    position: relative;
+}
+
+/* Estilos para el menú desplegable */
+#mobile-menu {
+    width: 100%;
+    height: 80vh;
+    display: none;
+    position: relative;
+    background: rgb(80, 79, 79); 
+    z-index: 2; 
+    opacity: 100%;
+}
+#mobile-nav {
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 2; 
+    opacity: 100%;
+}
+
+#mobile-nav a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+
+}
+
+#mobile-nav li{
+    align-items: center;
+    list-style: none;
+    margin: 20px;
+}
+
+.hidden {
+    display: none;
+}
+.paddingCero{
+    padding: 0;
+}
+.menu-opened {
+    background: rgba(0, 0, 0, 0);
+}
+
+#close-menu {
+    text-align: right;
+    font-size: 25px;
+    cursor: pointer;
+    background: transparent; 
+    color: grey; 
+    border: none; 
+    outline: none;
+    width: 10%;
+    margin: 10px 10px 0px 87%;
+}
+
+.menu-header{
+    display: inline;
+    text-align: right;
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:active {
+    color: black;
+    font-weight: bold;
+}
+
+}

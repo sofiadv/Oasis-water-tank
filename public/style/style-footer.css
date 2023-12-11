@@ -21,7 +21,7 @@ footer a{
 }
 
 .img-footer{
-    width: 40%;
+    width: 20%;
     margin: 10px;
 }
 
@@ -43,15 +43,20 @@ footer a{
     gap: 10%
 }
 
-
+footer nav{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
 
 
 /* Media query para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     
-    footer img{
-        width: 80%;
-        margin-left: 0;
+    .img-footer{
+        width: 40%;
+        margin: 10px;
     }
     
     footer{
@@ -63,14 +68,19 @@ footer a{
         gap: 2vh;
         text-align: center;
         height: auto;
-    background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.5);
     }
     
+    footer nav{
+        display: flex;
+        flex-direction: column;
+    }
     
     footer a{
         text-decoration: none;
         width: 70%;
         color: white;
+        margin: 5px;
     }
     .footer-redes-sociales{
         display: flex;
