@@ -46,8 +46,8 @@ footer a{
 
 
 
-/* Media query para dispositivos móviles */
-@media (max-width: 768px) {
+/* Media query para dispositivos mas grandes */
+@media (min-width: 768px) {
     
     footer img{
         width: 80%;
@@ -64,6 +64,7 @@ footer a{
         text-align: center;
         height: auto;
     background-color: rgba(0, 0, 0, 0.3);
+    padding-bottom: 2%;
     }
     
     
