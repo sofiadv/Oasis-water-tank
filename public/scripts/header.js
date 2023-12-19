@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeMenuButton = document.getElementById("close-menu");
     const header = document.querySelector("header");
     const logo = document.querySelector(".logo");
-    const menuIcon = document.querySelector(".menu-toggle");
+    const main = document.querySelector(".main")
+        
 
     menuToggle.addEventListener("click", function () {
         if (mobileMenu.classList.contains('menu-opened')) {
@@ -19,18 +20,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function showMobileMenu() {
+        mobileMenu.style.zIndex = 1;
         mobileMenu.style.display = "block";
-        mobileMenu.classList.add('menu-opened');
-        header.classList.add('menu-opened');
-        logo.classList.add('hidden');
-        menuIcon.classList.add('hidden');
+        closeMenuButton.style.display = "block"
+        header.classList.add('paddingCero')
+        logo.classList.add('hidden'); 
+        menuToggle.classList.add('hidden');
+        main.style.marginTop = 0
     }
 
     function hideMobileMenu() {
+        mobileMenu.style.zIndex = -10;
         mobileMenu.style.display = "none";
-        mobileMenu.classList.remove('menu-opened');
-        header.classList.remove('menu-opened');
+        closeMenuButton.style.display = "none"
         logo.classList.remove('hidden');
-        menuIcon.classList.remove('hidden');
+        menuToggle.classList.remove('hidden');
+        header.classList.remove('paddingCero')
+        main.style.marginTop = "20px"
     }
 });

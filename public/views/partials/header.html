@@ -13,23 +13,35 @@
 <body>
     <header>
         <div class="logo">
-            <a href="../index.html"><img src="/img/oasis-logo-nuevo.png" alt="Oasis Water Tank"></a>
+            <a href="./index.html"><img src="../img/oasis-logo-nuevo.png" alt="Oasis Water Tank Logo"></a>
         </div>
         <div class="menu-toggle">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" id="menu-burger"></i>
         </div>
-    
+
         <!-- Menú desplegable -->
-        <nav id="mobile-menu" class="hidden">
+       <div id="mobile-menu" class="hidden">
             <div class="menu-header">
                 <button id="close-menu">X</button>
             </div>
-            <ul>
-                <a href="./index.html" title="Ir a la página de inicio"><li>INICIO</li></a>
-                <a href="./mision-vision.html" title="Conoce nuestra misión y visión"><li>MISIÓN Y VISIÓN</li></a>
-                <a href="./productos.html" title="Explora nuestra tienda"><li>PRODUCTOS</li></a>
-                <a href="./mayoristas.html" title="Contáctanos"><li>MAYORISTAS</li></a>
-            </ul>
-        </nav>
+            <nav id="mobile-nav">
+                <ul>
+                    <a href="./index.html" title="Ir a la página de inicio">
+                        <li>INICIO</li>
+                    </a>
+                    <a href="./mision-vision.html" title="Conoce nuestra misión y visión">
+                        <li>MISIÓN Y VISIÓN</li>
+                    </a>
+                    <a href="./productos.html" title="Explora nuestra tienda">
+                        <li>PRODUCTOS</li>
+                    </a>
+                    <a href="./mayoristas.html" title="Contáctanos">
+                        <li>MAYORISTAS</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     </header>
     <script src="/scripts/header.js"></script>
+</body>
+</html>
