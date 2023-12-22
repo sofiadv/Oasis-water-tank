@@ -1,20 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'League Spartan', sans-serif;
     font-weight: 300;
     color: gray;
+    font-size: 1.2rem;
 }
 
 
 main{
-    margin-top: 120px;
+    margin-top: 20%;
 }
 
 /* Estilos para el video de fondo y el botón */
 .video-container {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 56.25vw; /* Relación de aspecto 16:9 */
     overflow: hidden;
     margin: 0 auto; /* Centrar en pantalla */
@@ -95,7 +100,7 @@ main{
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 10%;
+    margin: 10% auto;
 }
 
 .presentation-button:hover {
@@ -119,7 +124,7 @@ main{
 .detalle-tanque{
     width: 60%;
     border-radius: 60px;
-    margin: 10% auto;
+    margin: 0% auto;
     position: relative;
     transition: transform 0.3s, box-shadow 0.3s;
     padding-bottom: 3%;
@@ -147,6 +152,7 @@ h2, h3{
 }
 
 .accesorios-button{
+    margin: 6% auto;
     background-color: transparent;
     color: gray;
     border: 2px solid gray;
@@ -156,12 +162,12 @@ h2, h3{
     transition: background-color 0.3s ease;
 }
 /* Media query para dispositivos móviles */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .menu-toggle {
         display: block; /* Mostrar el icono del menú hamburguesa en pantallas pequeñas */
-    }
+    /*}
 
     nav {
         display: none; /* Ocultar el menú de navegación en pantallas pequeñas */
-    }
-}
+    /* }
+} */
