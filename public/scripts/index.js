@@ -18,5 +18,26 @@ videoPlayer.addEventListener('ended', function() {
     playVideo(currentVideoIndex);
 });
 
-// Iniciar la reproducción del primer video al cargar la página
-playVideo(currentVideoIndex);
+async function suscribirse() {
+    var email = document.getElementById("email").value;
+
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbztJCghU_lYyIPIVb_JuCG4_eFnPu8aHz9nqSPiwdcCFl9gfajOmXPXCJ3EDPKGMO4Q/exec', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: 'email=' + encodeURIComponent(email),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.text();
+      document.getElementById('mensaje').innerHTML = data;
+    } catch (error) {
+      console.error('Error en la solicitud POST:', error);
+    }
+  }
+        
