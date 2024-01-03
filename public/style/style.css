@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
@@ -74,6 +75,10 @@ main{
 
 .img-mosaico {
     width: 50%; /* Ajusta el ancho según tus necesidades */
+}
+
+.h1{
+    font-weight: 500;
 }
 
 
@@ -192,7 +197,7 @@ h2, h3{
 form {
     max-width: 400px; /* Ajusta según tus necesidades */
     margin: 0 auto;
-    padding: 20px;
+    padding: 5%;
     background-color: rgba(0, 0, 0, 0.7); /* Ajusta el nivel de opacidad según tus necesidades */
     border-radius: 10px;
 }
@@ -205,6 +210,15 @@ label, input, .btn-form {
 input, .btn-form {
     width: 100%;
     padding: 10px;
+}
+
+/*Estilos productos.html*/
+.detalle-productos{
+    margin-top: 8%;
+}
+
+.ultimo{
+    margin-bottom: 5%;
 }
 /* Media query para dispositivos móviles */
 /*@media (max-width: 768px) {
