@@ -12,7 +12,7 @@ body {
     font-size: 1.2rem;
 }
 
-
+/*Estilos-index*/
 main{
     margin-top: 20%;
 }
@@ -81,13 +81,17 @@ main{
     font-weight: 500;
 }
 
+.img-prod{
+    width: 80%;
+    border-radius: 5px 
+}
 
 #presentación-producto{
     text-align: center;
     margin-bottom: 5%;
 }
 
-#presentación-producto img{
+#presentación-producto .img-pres-prod{
     width: 100%;
 }
 
@@ -168,7 +172,7 @@ h2, h3{
 }
 
 .background-container {
-    background-image: url('../img/boogyPlaya.jpg');
+    background-image: url('/img/boogyPlaya.jpg');
     background-size: cover; /* Ajusta según tus necesidades */
     background-position: center; /* Ajusta según tus necesidades */
     position: relative;
@@ -210,6 +214,19 @@ label, input, .btn-form {
 input, .btn-form {
     width: 100%;
     padding: 10px;
+}
+
+.btn-wsp{
+    position: fixed !important;
+    width: 14%;
+    bottom: 10%;
+    right: 2%;
+    color: #fff;
+    z-index: 100;
+}
+
+.img-wsp{
+    width: 100% !important;
 }
 
 /*Estilos productos.html*/
