@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    text-align: center;
 }
 
 body {
@@ -10,6 +9,7 @@ body {
     font-weight: 300;
     color: gray;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 /*Estilos-index*/
@@ -117,6 +117,13 @@ main{
     color: white; /* Cambia el color del texto al hacer hover */
 }
 
+p{
+    width: 90%;
+    margin: auto;
+}
+
+
+/*estilos Productos*/
 .productos img{
     width: 80%;
     border-radius: 60px;
@@ -199,7 +206,7 @@ h2, h3{
 }
 
 form {
-    max-width: 400px; /* Ajusta según tus necesidades */
+    max-width: 480px; /* Ajusta según tus necesidades */
     margin: 0 auto;
     padding: 5%;
     background-color: rgba(0, 0, 0, 0.7); /* Ajusta el nivel de opacidad según tus necesidades */
@@ -217,7 +224,7 @@ input, .btn-form {
 }
 
 .btn-wsp{
-    position: fixed !important;
+    position: fixed;
     width: 14%;
     bottom: 10%;
     right: 2%;
@@ -225,7 +232,7 @@ input, .btn-form {
     z-index: 100;
 }
 
-.img-wsp{
+.btn-wsp img{
     width: 100% !important;
 }
 
@@ -237,13 +244,76 @@ input, .btn-form {
 .ultimo{
     margin-bottom: 5%;
 }
-/* Media query para dispositivos móviles */
-/*@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Mostrar el icono del menú hamburguesa en pantallas pequeñas */
-    /*}
 
-    nav {
-        display: none; /* Ocultar el menú de navegación en pantallas pequeñas */
-    /* }
-} */
+/*estilos mayoristas*/
+.mayoristas {
+    margin: 0;
+    padding: 6% 2%;
+    background-image: url('/img/oasis-bici.JPG'); /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/*.form-mayoristas {
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para hacer legible el formulario */
+    /*padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    margin-top: 25%;
+}*/
+
+.label-mayoristas {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-may, .text-may {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.input-may[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Media query para dispositivos móviles */
+@media (min-width: 500px){
+    .contenedor-index{
+        display: grid;
+        grid-template-columns: 1.5fr 0 2fr;
+    }
+
+    .img-mosaico{
+        
+    }
+
+    /*estilos productos desktop*/
+
+    .cont-productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main{
+        line-height: 2.5rem;
+    }
+
+    .accesorios-sub{
+        font-size: 2rem;
+    }
+
+    .accesorios-button{
+        font-size: 1.5rem;
+        width: 26%;
+        border-radius: 30px;
+    }
+}
+    

@@ -1,7 +1,7 @@
 const videos = [
-    "../img/camioneta1.mp4",
-    "../img/camioneta2.mp4",
-    "../img/camioneta3.mp4"
+    "/img/camioneta1.mp4",
+    "/img/camioneta2.mp4",
+    "/img/camioneta3.mp4"
 ];
 
 const videoPlayer = document.getElementById('video-background');

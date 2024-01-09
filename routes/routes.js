@@ -3,9 +3,8 @@ const express = require('express');
 const path = require('path');
 const router = express.Router();
 
-// Ruta para la página de inicio
 router.get('/', (req, res) => {
-  res.render('index'); // Asegúrate de que 'index' coincida con el nombre de tu vista EJS
+  res.render('index');  // Renderiza la vista EJS 'index.ejs'
 });
 
 // Rutas para otras páginas
@@ -22,3 +21,4 @@ router.get('/mayoristas', (req, res) => {
 });
 
 module.exports = router;
+

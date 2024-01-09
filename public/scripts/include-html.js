@@ -1,4 +1,4 @@
-function includeHTML() {
+/*function includeHTML() {
     console.log("includeHTML function called");  // Agrega este log
     var z, i, elmnt, file, xhttp;
     z = document.getElementsByTagName("*");
@@ -25,4 +25,4 @@ function includeHTML() {
             return;
         }
     }
-}
+}*/

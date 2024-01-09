@@ -4,6 +4,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
 const ejs = require('ejs');
+const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 const config = require('./config/config');
@@ -41,8 +42,43 @@ app.use(
 // Middleware para logging de solicitudes
 app.use(morgan('dev'));
 
+// Parsea datos del formulario
+app.use(express.urlencoded({ extended: true }));
+
 // Rutas manejadas por el enrutador
 app.use('/', routes);
+
+// Ruta para manejar el envío del formulario de contacto
+app.post('/enviar-correo', (req, res) => {
+  const { nombre, email, mensaje } = req.body;
+
+  // Configuración de nodemailer
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: process.env.EMAIL_USER, // Agrega tu dirección de correo
+      pass: process.env.EMAIL_PASSWORD, // Agrega tu contraseña
+    },
+  });
+
+  const mailOptions = {
+    from: process.env.EMAIL_USER, // Debería ser la misma dirección que la configurada en 'auth'
+    to: 'agusdura2@hotmail.com', // Cambia a la dirección de correo electrónico deseada
+    subject: 'Nuevo mensaje de formulario de contacto',
+    text: `Nombre: ${nombre}\nCorreo Electrónico: ${email}\nMensaje: ${mensaje}`,
+  };
+
+  // Envío del correo
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error(error);
+      res.status(500).send('Error al enviar el correo');
+    } else {
+      console.log('Correo enviado: ' + info.response);
+      res.status(200).send('Correo enviado con éxito');
+    }
+  });
+});
 
 // Middleware para manejar errores
 app.use((err, req, res, next) => {

@@ -9,6 +9,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 10;
+    width: 100%;
 }
 
 h1{
@@ -108,7 +109,7 @@ h1{
 }
 
 /* Media query para pantallas más grandes */
-/* @media (min-width: 500px) {
+@media (min-width: 500px) {
     header {
         margin-top: 0;
     }
@@ -142,4 +143,7 @@ h1{
     header {
         position: relative;
     }
-} */
+    .btn-wsp img {
+        width: 60% !important;
+    }
+} 
