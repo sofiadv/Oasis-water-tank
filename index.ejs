@@ -1,0 +1,58 @@
+<%- include ('partials/header')%>
+    <main class="main">
+        <div class="contenedor-index">
+            <section class="video-container" id="video-container">
+                <video autoplay muted id="video-background" preload="auto">
+                <source src="/img/camioneta1.mp4" type="video/mp4">
+                Tu navegador no soporta el tag de video.
+                </video>
+                <div class="overlay">
+                <button class="hover-button">VER PRODUCTOS</button>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+            <section class="image-grid">
+                <img src="/img/camioneta-rio.jpg" alt="Camioneta en el río" class="img-mosaico">
+                <img src="/img/boogyAmarillo.jpg" alt="Imagen 2" class="img-mosaico">
+                <img src="/img/camionetaNegra.jpg" alt="Imagen 3" class="img-mosaico">
+                <img src="/img/camioneta-blanca y negra.jpg" alt="Imagen 4" class="img-mosaico">
+            </section>
+        </div>
+        <section id="presentación-producto">
+            <img src="/img/tanque-primer-plano.jpg" alt="Tanque en primer plano" class="img-pres-prod">
+            <h2>Bienvenido al mundo de <span class="h1"> OASIS WATER TANKS</span></h2>
+            <h2>POTENCIANDO AVENTURAS</h2>
+            <img src="/img/tanque-1.jpg" alt="Tanque 1" class="img-pres-prod">
+        </section>
+            <p>Pensado y fabricado de manera robusta, eficiente y estética  Oasis Tank posee la capacidad de cargar y entregar agua a través de dos mecanismos, la gravedad y la presión.</p>
+            <p>Este equipo se adapta a la perfeccion a cualquier tipo de vehículo que tenga barras de techo o racks de techo o laterales.</p>
+            
+            <button class="accesorios-button">VER PRODUCTOS</button>
+
+        </div>
+        <div class="background-container">
+            <!-- Contenido dentro del div con la imagen de fondo -->
+            <div class="formulario-container">
+                <form id="https://script.google.com/macros/s/AKfycbztJCghU_lYyIPIVb_JuCG4_eFnPu8aHz9nqSPiwdcCFl9gfajOmXPXCJ3EDPKGMO4Q/exec">
+                    <label for="email">Ingresa tu correo para recibir nuestras novedades</label>
+                    <input type="email" id="email" name="email" required placeholder="e-mail">
+                    <button type="button" class="btn-form" onclick="suscribirse()">Suscribirse</button>
+
+                </form>
+            </div>
+            <div id="mensaje"></div>
+        </div>
+       
+    </main>
+    <a href="https://wa.link/qsvgn8" class="btn-wsp" target="_blank">
+        <img src="/img/wsp.png" alt="Whatsapp" class="img-wsp">
+    </a>
+    <%- include('partials/footer')%>
+    <script src="https://kit.fontawesome.com/55711116cb.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Iconos: https://www.flaticon.es/ -->
+</body>
+
+</html>

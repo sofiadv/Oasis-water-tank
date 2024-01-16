@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+<main>
+    <div class="mayoristas">
+        <form action="/enviar-correo" method="post">
+            <label for="nombre" class="label-mayoristas">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email" class="label-mayoristas">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje" class="label-mayoristas">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required class="text-may"></textarea>
+
+            <input type="submit" value="Enviar" class="input-may">
+        </form>
+    </div>
+    <a href="https://wa.link/qsvgn8" class="btn-wsp" target="_blank">
+        <img src="/img/wsp.png" alt="Whatsapp">
+    </a>
+</main>
+<%- include('partials/footer') %>

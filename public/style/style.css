@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+    color: gray;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/*Estilos-index*/
+main{
+    margin-top: 20%;
+}
+
+/* Estilos para el video de fondo y el botón */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 56.25vw; /* Relación de aspecto 16:9 */
+    overflow: hidden;
+    margin: 0 auto; /* Centrar en pantalla */
+}
+
+#video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.overlay-content {
+    text-align: center;
+}
+
+.hover-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 25%;
+}
+
+.hover-button:hover {
+    background-color: white;
+    color: gray; /* Cambia el color del texto al hacer hover */
+}
+
+.divider {
+    height: 10px;
+    background-color: #ccc; /* Gris claro, ajusta el color según tus preferencias */
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.img-mosaico {
+    width: 50%; /* Ajusta el ancho según tus necesidades */
+}
+
+.h1{
+    font-weight: 500;
+}
+
+.img-prod{
+    width: 80%;
+    border-radius: 5px 
+}
+
+#presentación-producto{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#presentación-producto .img-pres-prod{
+    width: 100%;
+}
+
+#presentación-producto p{
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+}
+
+.presentation-button{
+    background-color: transparent;
+    color: gray;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10% auto;
+}
+
+.presentation-button:hover {
+    background-color: gray;
+    color: white; /* Cambia el color del texto al hacer hover */
+}
+
+p{
+    width: 90%;
+    margin: auto;
+}
+
+
+/*estilos Productos*/
+.productos img{
+    width: 80%;
+    border-radius: 60px;
+}
+
+.productos{
+    text-align: center;
+}
+
+.productos h2{
+    margin-top: 0;
+}
+
+.detalle-tanque{
+    width: 60%;
+    border-radius: 60px;
+    margin: 0% auto;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding-bottom: 3%;
+}
+
+.detalle-tanque::before{
+    content: '';
+    position: absolute;
+    top: 10px; /* Ajusta según tu diseño */
+    left: 10px; /* Ajusta según tu diseño */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(20px); /* Ajusta según tu preferencia */
+}
+
+.detalle-tanque:hover{
+    border-radius: 60px;
+    transform: scale(1.1); /* Ajusta según tu preferencia */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Ajusta según tu preferencia */
+}
+
+h2, h3{
+    font-weight: 300;
+}
+
+.accesorios-button{
+    margin: 6% auto;
+    background-color: transparent;
+    color: gray;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.background-container {
+    background-image: url('/img/boogyPlaya.jpg');
+    background-size: cover; /* Ajusta según tus necesidades */
+    background-position: center; /* Ajusta según tus necesidades */
+    position: relative;
+    height: 100vh; /* Ajusta según tus necesidades */
+}
+
+.background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el nivel de opacidad según tus necesidades */
+}
+
+.formulario-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+form {
+    max-width: 480px; /* Ajusta según tus necesidades */
+    margin: 0 auto;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.7); /* Ajusta el nivel de opacidad según tus necesidades */
+    border-radius: 10px;
+}
+
+label, input, .btn-form {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input, .btn-form {
+    width: 100%;
+    padding: 10px;
+}
+
+.btn-wsp{
+    position: fixed;
+    width: 14%;
+    bottom: 10%;
+    right: 2%;
+    color: #fff;
+    z-index: 100;
+}
+
+.btn-wsp img{
+    width: 100% !important;
+}
+
+/*Estilos productos.html*/
+.detalle-productos{
+    margin-top: 8%;
+}
+
+.ultimo{
+    margin-bottom: 5%;
+}
+
+/*estilos mayoristas*/
+.mayoristas {
+    margin: 0;
+    padding: 6% 2%;
+    background-image: url('/img/oasis-bici.JPG'); /* Ruta a tu imagen de fondo */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/*.form-mayoristas {
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para hacer legible el formulario */
+    /*padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    margin-top: 25%;
+}*/
+
+.label-mayoristas {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.input-may, .text-may {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.input-may[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Media query para dispositivos móviles */
+@media (min-width: 500px){
+    .contenedor-index{
+        display: grid;
+        grid-template-columns: 1.5fr 0 2fr;
+    }
+
+    .img-mosaico{
+        
+    }
+
+    /*estilos productos desktop*/
+
+    .cont-productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main{
+        line-height: 2.5rem;
+    }
+
+    .accesorios-sub{
+        font-size: 2rem;
+    }
+
+    .accesorios-button{
+        font-size: 1.5rem;
+        width: 26%;
+        border-radius: 30px;
+    }
+}
+    
